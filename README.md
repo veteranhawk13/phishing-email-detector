@@ -2,8 +2,6 @@
 
 A React web app that scores emails for phishing risk (0 to 100%) by combining hand-written rules with a trained machine-learning model. Everything runs in your browser: nothing you paste is sent anywhere.
 
-**Live demo:** https://veteranhawk13.github.io/phishing-email-detector/
-
 ## How it works
 
 The final score is **60% rules + 40% trained model**.
