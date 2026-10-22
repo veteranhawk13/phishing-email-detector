@@ -160,12 +160,6 @@ export default function App() {
             <div className="paste-actions">
               <button className="chip primary" onClick={pasteFromClipboard}>📋 Paste from clipboard</button>
               <button className="chip" onClick={() => fileRef.current?.click()}>📎 Open .eml / .txt</button>
-              <button
-                className="chip"
-                onClick={() => { setRaw(''); setForm(EMPTY); setResult(null); setNotice(''); }}
-              >
-                🗑 Clear
-              </button>
               <input ref={fileRef} type="file" accept=".eml,.txt,.html,.htm,message/rfc822" hidden onChange={loadFile} />
             </div>
             {notice && <div className="notice">{notice}</div>}
